@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     try {
-        res.send("hello")
+        res.send("hello it's about")
     } catch (err) {
         return({message: err})
     }
