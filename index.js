@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const homeRoute = require('./routes/home');
 const aboutRoute = require('./routes/about');
 const postRoute = require('./routes/post')
+
 // const contactRoute = require('./routes/contact');
 // const adminRoute = require('./routes/admin');
 
