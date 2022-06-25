@@ -73,7 +73,7 @@ router.post('/', upload.array("image1"), async(req, res) => {
     })
     try {
         const savedPost = await post.save();
-        res.json(savedPost);
+        res.json({"message": "Post Completed!"});
         // console.log(savedPost)
     } catch (err) {
         return({ message : err})
