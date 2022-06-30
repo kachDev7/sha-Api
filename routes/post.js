@@ -1,11 +1,13 @@
 const express = require('express');
 const Post = require('../models/Post');
+
 // const multer = require('multer');
 // const cloudinary = require('./cloudinary')
 // const fs = require('fs')
 
 // Init Router
 const router = express.Router();
+
 
 // Set up Multer Storage for images
 // const storage = multer.diskStorage({
@@ -47,7 +49,7 @@ router.get('/:postId', async (req, res) => {
 })
 
 // Shannels Post Request
-router.post('/', async(req, res) => {
+router.post('/', async (req, res) => {
 
 
     //  upload.array("image1"),
@@ -81,7 +83,7 @@ router.post('/', async(req, res) => {
     try {
         const savedPost = await post.save();
         res.json({"message": "Post Completed!"});
-        // console.log(savedPost)
+        console.log(savedPost)
     } catch (err) {
         return({ message : err});
     }
