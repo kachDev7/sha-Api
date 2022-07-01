@@ -42,5 +42,5 @@ mongoose.connect(db, () => { console.log("DB connected successfully")});
 
 
 // PORT TO  LISTEN
-const port = process.env.PORT;
-app.listen(8081, () => { console.log("Server awake")});
+const port = process.env.PORT || 8081;
+app.listen(port, () => { console.log("Server awake")});
