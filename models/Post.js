@@ -16,4 +16,5 @@ const postSchema = mongoose.Schema({
     category: String
 })
 
+// export the postSchema as Post
 module.exports = mongoose.model('Post', postSchema)
