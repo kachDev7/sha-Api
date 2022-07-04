@@ -6,7 +6,7 @@ require('dotenv/config');
 const bodyParser = require('body-parser');
 const homeRoute = require('./routes/home');
 const aboutRoute = require('./routes/about');
-const postRoute = require('./routes/post')
+const postRoute = require('./routes/post');
 
 // const contactRoute = require('./routes/contact');
 // const adminRoute = require('./routes/admin');
@@ -19,9 +19,6 @@ const postRoute = require('./routes/post')
 // INITIALIZATIONS
 const app = express();
 
-// app.get('/', (req, res) => {
-//     res.send("homepagee")
-// })
 
 // MIDDLEWARES
 app.use(cors())
@@ -30,7 +27,7 @@ app.use('/', homeRoute)
 app.use('/about', aboutRoute)
 app.use('/post', postRoute);
 // app.use('/contact', contactRoute)
-// app.use('/admin', adminRoute)
+
 
 
 
